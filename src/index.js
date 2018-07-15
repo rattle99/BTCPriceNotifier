@@ -24,7 +24,7 @@ function getBTC() {
             price.innerHTML = '$'+cryptos.toLocaleString('en')
 
             if (targetPrice.innerHTML != '' && targetPriceVal < res.data.BTC.USD){
-              const myNotification = new.window.Notification(notification.title, notification)
+              const myNotification = new Notification(notification.title, notification)
             }
       })
 }
