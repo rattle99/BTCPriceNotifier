@@ -1,5 +1,6 @@
 const {app, BrowserWindow, Menu} = require('electron')
 const shell = require('electron').shell
+const ipc = require('electron').ipcMain
 
   // Keep a global reference of the window object, if you don't, the window will
   // be closed automatically when the JavaScript object is garbage collected.
@@ -7,13 +8,13 @@ const shell = require('electron').shell
 
   function createWindow () {
     // Create the browser window.
-    win = new BrowserWindow({width: 800, height: 600})
+    win = new BrowserWindow({width: 800, height: 450})
 
     // and load the index.html of the app.
     win.loadFile('src/index.html')
 
     // Open the DevTools.
-    win.webContents.openDevTools()
+//    win.webContents.openDevTools()
 
     // Emitted when the window is closed.
     win.on('closed', () => {
@@ -70,6 +71,10 @@ const shell = require('electron').shell
     if (win === null) {
       createWindow()
     }
+  })
+
+  ipc.on('update-notify-value', function(event, arg){
+    win.webContents.send('targetPriceVal', arg)
   })
 
   // In this file you can include the rest of your app's specific main process
