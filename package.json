@@ -1,0 +1,23 @@
+{
+  "name": "BTCPriceNotifier",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rattle99/BTCPriceNotifier.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rattle99/BTCPriceNotifier/issues"
+  },
+  "homepage": "https://github.com/rattle99/BTCPriceNotifier#readme",
+  "devDependencies": {
+    "electron": "2.0.5"
+  }
+}
