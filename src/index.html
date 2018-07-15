@@ -6,9 +6,17 @@
       <link rel="stylesheet" href="..assets/css/main.css">
     </head>
     <body>
-      <h1>Hello World!</h1>
-      We are using node <script>document.write(process.versions.node)</script>,
-      Chrome <script>document.write(process.versions.chrome)</script>,
-      and Electron <script>document.write(process.versions.electron)</script>.
+      <div class="row">
+        <div id="price-container">
+          <p class="subtext">Current BTC USD</p>
+          <h1 id="price">Loading...</h1>
+        </div>
+        <div id="goal-container">
+          <p><img src="../assests/images/up.svg"><span id="targetPrice">Choose a Target Price</span></p>
+        </div>
+        <div id="right-container">
+          <button id="notifyBtn">Notify me when..</button>
+      </div>
+      <script src="index.js"></script>
     </body>
   </html>
