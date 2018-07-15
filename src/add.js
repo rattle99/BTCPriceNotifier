@@ -14,6 +14,6 @@ const updateBtn =  document.getElementById('updateBtn')
 updateBtn.addEventListener('click', function(){
     ipc.send('update-notify-value', document.getElementById('notifyVal').value)
 
-    var window = remote.getCurrentWindow()
+    var window = remote.getCurrentWindow();
     window.close()
 })
