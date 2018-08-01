@@ -30,7 +30,7 @@ const ipc = require('electron').ipcMain
       {
         label:'Menu',
         submenu: [
-          {label: 'Adjust Notification Value'},
+//          {label: 'Adjust Notification Value'},
           {
             label: 'CoinMarketCap',
             click() {
