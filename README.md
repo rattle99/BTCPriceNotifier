@@ -8,4 +8,4 @@
 ## License
 The MIT License (MIT)  
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square)](LICENSE)  
-Copyright (c) 2017 **Aurko Mitra**
+(cc) 2018 **Rattle**
