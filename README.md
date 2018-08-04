@@ -2,6 +2,9 @@
 
 ### For linux and windows. Check out the releases.
 
+[![Github All Releases](https://img.shields.io/github/downloads/rattle99/BTCPriceNotifier/total.svg?style=popout)](https://img.shields.io/github/downloads/rattle99/BTCPriceNotifier/total.svg)
+
+
 ![Alt Text](https://github.com/rattle99/BTCPriceNotifier/blob/master/assets/images/demo.gif)
 
 
