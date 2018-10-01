@@ -14,8 +14,10 @@ p.notify {
 
 .row2 {
     width:100%;
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: auto auto;
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
     padding:20px;
 }
 
