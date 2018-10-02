@@ -12,9 +12,13 @@ body {
     margin-top:50px;
     background:#1A1A1A;
     border-bottom: 3px solid #FF0057;
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: 35% auto 35%;
-    align-items: center;
+    -ms-grid-columns: 35% auto 35%;
+        grid-template-columns: 35% auto 35%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 #price-container {

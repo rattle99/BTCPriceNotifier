@@ -1,19 +1,20 @@
-const electron = require('electron')
-const path = require('path')
-const remote = electron.remote
-const ipc = electron.ipcRenderer
-const closeBtn = document.getElementById('closeBtn')
+const electron = require('electron');
+const path = require('path');
+const remote = electron.remote;
+const ipc = electron.ipcRenderer;
+const closeBtn = document.querySelector('#closeBtn');
 
-closeBtn.addEventListener('click', function(event) {
-    var window = remote.getCurrentWindow()
-    window.close()
+// add arrow functions
+closeBtn.addEventListener('click', (event) => {
+    var window = remote.getCurrentWindow();
+    window.close();
 })
 
-const updateBtn =  document.getElementById('updateBtn')
+const updateBtn = document.querySelector('#updateBtn');
 
-updateBtn.addEventListener('click', function(){
-    ipc.send('update-notify-value', document.getElementById('notifyVal').value)
+updateBtn.addEventListener('click', () => {
+    ipc.send('update-notify-value', document.querySelector('#notifyVal').value);
 
     var window = remote.getCurrentWindow();
-    window.close()
+    window.close();
 })
